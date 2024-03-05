@@ -3,7 +3,7 @@ import { usePathname } from 'next/navigation'
 import { Inter } from "next/font/google";
 import "./globals.css";
 
-import Navigation from '../Navigation/Index'
+import Navigation from '../components/navigation/Index'
 
 const inter = Inter({ subsets: ["latin"] });
 

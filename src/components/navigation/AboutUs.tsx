@@ -1,4 +1,6 @@
 
 export default function AboutUsNavigation() {
-  return 'About us nav';
+  return (
+    <div>About us nav</div>
+  )
 }
