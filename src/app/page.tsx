@@ -174,8 +174,8 @@ export default function Home() {
       {/* Catalogues */}
 
       <section className="bg-white">
-        <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 ">
-          <div className="grid grid-cols-4 gap-4 mx-auto mb-10">
+        <div className=" flex flex-wrap justify-between mx-auto">
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-4 gap-10 mx-auto mb-10">
             {catalogues.map((catalogue) => (
               <div
                 key={catalogue.id}
