@@ -174,16 +174,16 @@ export default function Home() {
       {/* Catalogues */}
 
       <section className="bg-white">
-        <div className=" flex flex-wrap justify-between mx-auto">
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-4 gap-10 mx-auto mb-10">
+        <div className="justify-between mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 mx-auto mb-10 p-2">
             {catalogues.map((catalogue) => (
               <div
                 key={catalogue.id}
-                className="w-full max-w-sm rounded-lg shadow mt-10"
+                className="w-full md:max-w-sm rounded-lg shadow mt-10"
               >
                 <a href="#">
                   <img
-                    className="mb-3 mx-auto"
+                    className="mb-3  w-full mx-auto"
                     src={catalogue.image}
                     alt={catalogue.image}
                   />
