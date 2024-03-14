@@ -1,12 +1,10 @@
 'use client';
 import 'flowbite';
+import { FC } from 'react';
+import { Props } from 'next/script';
 import Categories from '../Categories';
 
-export default function LandingNavigation({
-  isVisible,
-}: {
-  isVisible: boolean;
-}) {
+const LandingNavigation: FC<Props> = ({ isVisible }) => {
   const navlinks = [
     {
       name: 'Guide',
@@ -163,4 +161,6 @@ export default function LandingNavigation({
       </div>
     </div>
   );
-}
+};
+
+export default LandingNavigation;
