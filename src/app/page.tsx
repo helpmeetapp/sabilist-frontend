@@ -203,7 +203,7 @@ export default function Home() {
                         <p className="">{catalogue.user.name}</p>
                       </div>
                     </a>
-                    <Image src={catalogue.user.tierImage} />
+                    <Image src={catalogue.user.tierImage} alt={'tierImage'} />
                   </div>
                   <div className="py-3">
                     <h5 className="font-semibold tracking-tight text-gray-900 dark:text-white">
@@ -214,14 +214,22 @@ export default function Home() {
                     </p>
                     <div className="flex space-x-2">
                       <a href="" className="flex text-black">
-                        <Image src="/images/svg/like.svg" className="mr-1" />
+                        <Image
+                          src="/images/svg/like.svg"
+                          alt={'Icon'}
+                          className="mr-1"
+                        />
                         33
                       </a>
                       <a href="" className="flex text-black">
-                        <Image src="/images/svg/message.svg" />
+                        <Image src="/images/svg/message.svg" alt={'Icon'} />
                       </a>
                       <a href="" className="flex text-black">
-                        <Image src="/images/svg/star.svg" className="mr-1" />
+                        <Image
+                          src="/images/svg/star.svg"
+                          alt={'Icon'}
+                          className="mr-1"
+                        />
                         24
                       </a>
                     </div>
