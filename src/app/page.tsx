@@ -185,7 +185,7 @@ export default function Home() {
                 className="w-full md:max-w-sm rounded-lg shadow mt-10"
               >
                 <a href="#">
-                  <img
+                  <Image
                     className="mb-3  w-full mx-auto"
                     src={catalogue.image}
                     alt={catalogue.image}
@@ -203,7 +203,7 @@ export default function Home() {
                         <p className="">{catalogue.user.name}</p>
                       </div>
                     </a>
-                    <img src={catalogue.user.tierImage} />
+                    <Image src={catalogue.user.tierImage} />
                   </div>
                   <div className="py-3">
                     <h5 className="font-semibold tracking-tight text-gray-900 dark:text-white">
@@ -214,14 +214,14 @@ export default function Home() {
                     </p>
                     <div className="flex space-x-2">
                       <a href="" className="flex text-black">
-                        <img src="/images/svg/like.svg" className="mr-1" />
+                        <Image src="/images/svg/like.svg" className="mr-1" />
                         33
                       </a>
                       <a href="" className="flex text-black">
-                        <img src="/images/svg/message.svg" />
+                        <Image src="/images/svg/message.svg" />
                       </a>
                       <a href="" className="flex text-black">
-                        <img src="/images/svg/star.svg" className="mr-1" />
+                        <Image src="/images/svg/star.svg" className="mr-1" />
                         24
                       </a>
                     </div>

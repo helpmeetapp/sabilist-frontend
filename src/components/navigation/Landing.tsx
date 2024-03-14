@@ -2,7 +2,11 @@
 import 'flowbite';
 import Categories from '../Categories';
 
-export default function LandingNavigation({ isVisible }) {
+export default function LandingNavigation({
+  isVisible,
+}: {
+  isVisible: boolean;
+}) {
   const navlinks = [
     {
       name: 'Guide',
