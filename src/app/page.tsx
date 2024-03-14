@@ -1,4 +1,7 @@
 import Image from 'next/image';
+import { FC } from 'react';
+
+import Link from 'next/link';
 
 export default function Home() {
   const categories = [
@@ -229,6 +232,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Feature */}
     </main>
   );
 }
