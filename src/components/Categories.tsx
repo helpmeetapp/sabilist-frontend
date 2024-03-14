@@ -5,7 +5,7 @@ type Props = {
   isVisible: boolean;
 };
 
-const Categories: FC<Props> = ({ isVisible }) => {
+const Categories: FC<Props> = ({ isVisible }: { isVisible: boolean }) => {
   return (
     <div
       className={` ${

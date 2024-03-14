@@ -4,7 +4,11 @@ import { FC } from 'react';
 import { Props } from 'next/script';
 import Categories from '../Categories';
 
-const LandingNavigation: FC<Props> = ({ isVisible }) => {
+const LandingNavigation: FC<Props> = ({
+  isVisible,
+}: {
+  isVisible: boolean;
+}) => {
   const navlinks = [
     {
       name: 'Guide',
