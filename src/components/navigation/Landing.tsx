@@ -4,11 +4,11 @@ import { FC } from 'react';
 import { Props } from 'next/script';
 import Categories from '../Categories';
 
-const LandingNavigation: FC<Props> = ({
+export default function LandingNavigation({
   isVisible,
 }: {
   isVisible: boolean;
-}) => {
+}) {
   const navlinks = [
     {
       name: 'Guide',
@@ -165,6 +165,4 @@ const LandingNavigation: FC<Props> = ({
       </div>
     </div>
   );
-};
-
-export default LandingNavigation;
+}
