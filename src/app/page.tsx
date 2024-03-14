@@ -175,7 +175,7 @@ export default function Home() {
 
       <section className="bg-white">
         <div className="justify-between mx-auto">
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 mx-auto mb-10 p-2">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 mx-auto mb-10 p-2 px-[5%] lg:px-[10%]">
             {catalogues.map((catalogue) => (
               <div
                 key={catalogue.id}
