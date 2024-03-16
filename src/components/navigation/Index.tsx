@@ -6,6 +6,7 @@ import { usePathname } from 'next/navigation';
 import AboutUsNavigation from './AboutUs';
 import LandingNavigation from './Landing';
 import Categories from '../Categories';
+
 export default function IndexNavigation() {
   const pathname = usePathname();
   const [isVisible, setIsVisible] = useState<boolean>(false);

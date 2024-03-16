@@ -2,6 +2,8 @@ import Image from 'next/image';
 import { FC } from 'react';
 
 import Link from 'next/link';
+import features from '@/data/features';
+import testimonials from '@/data/testimonials';
 
 export default function Home() {
   const categories = [
@@ -157,7 +159,7 @@ export default function Home() {
     <main>
       {/* Categories */}
       <div className="">
-        <ul className="flex flex-wrap bg-[#D8D8D8] justify-center text-sm font-medium text-center text-black dark:text-gray-400 p-4">
+        <ul className="flex flex-wrap bg-[#F8F9FF] justify-center text-sm font-medium text-center text-black dark:text-gray-400 p-4">
           {categories.map((category) => (
             <li className="me-2" key={category.link}>
               <a
@@ -175,10 +177,9 @@ export default function Home() {
       </div>
 
       {/* Catalogues */}
-
-      <section className="bg-white">
+      <section className="bg-[#F8F9FF] pb-20">
         <div className="justify-between mx-auto">
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 mx-auto mb-10 p-2 px-[5%] lg:px-[10%]">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 mx-auto  p-2 px-[5%] lg:px-[10%]">
             {catalogues.map((catalogue) => (
               <div
                 key={catalogue.id}
@@ -242,6 +243,161 @@ export default function Home() {
       </section>
 
       {/* Feature */}
+      <section className="h-full w-full xl:mx-auto py-8 p-2 px-[5%] lg:px-[5%]">
+        <div className=" bg-white ">
+          <h2 className="text-center text-[26px] md:text-[38px] text-[#2D2D2D] font-bold py-4">
+            Everything you need, is right here
+          </h2>
+
+          <div className="flex flex-wrap items-center justify-center gap-2 md:gap-4">
+            {features.map((feature) => (
+              <div
+                key={feature.icon}
+                className="p-2 md:p-4 bg-[#F8F9FF] w-[48%] md:w-[30%] lg:w-[20%] flex flex-col items-center justify-center gap-2 rounded-2xl"
+              >
+                <div className="rounded-2xl bg-[#E5F4F2] p-4">
+                  <img src={feature.icon} alt={feature.name} />
+                </div>
+                <p className="text-sm md:text-base xl:text-lg text-[#2D2D2D]">
+                  {feature.name}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* About */}
+      <section className="bg-[#F8F9FF]">
+        <div className=" w-full xl:max-w-7xl h-full xl:mx-auto">
+          <div className="p-4">
+            <div className="flex flex-col md:flex-row items-center justify-center gap-8 lg:mx-12">
+              <div className="w-full md:w-1/2 flex flex-col justify-center text-[#2D2D2D]">
+                <h3 className="text-[23px] lg:text-3xl xl:text-4xl font-bold ">
+                  A <span className="text-[#009379]">lasting Solution</span>
+                  <br /> to your urgent needs
+                </h3>
+
+                <div className="space-y-2">
+                  <div className="border-l-4 border-l-[#009379] px-2 space-y-1 lg:p-2">
+                    <h4 className="text-base xl:text-lg text-[#009379] font-semibold">
+                      Express quality service delivery
+                    </h4>
+                    <p className="text-xs xl:text-sm">
+                      Connect with the right artisan to deliver the services you
+                      need within minutes.
+                    </p>
+                  </div>
+
+                  <div className="border-l-4 border-l-[#009379] px-2 space-y-1 lg:p-2">
+                    <h4 className="text-base xl:text-lg text-[#009379] font-semibold">
+                      Best for your budget
+                    </h4>
+                    <p className="text-xs xl:text-sm">
+                      Services are top rated and top vetted. Prices are best and
+                      affordable, project based and competitive.
+                    </p>
+                  </div>
+
+                  <div className="border-l-4 border-l-[#009379] px-2 space-y-1 lg:p-2">
+                    <h4 className="text-base xl:text-lg text-[#009379] font-semibold">
+                      Secure payments
+                    </h4>
+                    <p className="text-xs xl:text-sm">
+                      All payments are secured. You know what you will pay
+                      upfront. No payment is released until you approve the
+                      work.
+                    </p>
+                  </div>
+
+                  <div className="border-l-4 border-l-[#009379] px-2 space-y-1 lg:p-2">
+                    <h4 className="text-base xl:text-lg text-[#009379] font-semibold">
+                      24/7 support
+                    </h4>
+                    <p className="text-xs xl:text-sm">
+                      Got questions, queries, complaints or need information or
+                      help? We are available 24/7 to attend to you, anywhere!
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="w-full md:w-1/2 space-y-4">
+                <img
+                  src={'/images/services/smiling-mechanic.png'}
+                  alt="Smiling mechanic with arms crossed holding a spanner"
+                  className="w-full rounded"
+                />
+
+                {/* <Button label="Learn More" primary extraLarge /> */}
+
+                <button className="w-full bg-[#009379] text-[#F8F9FF] rounded py-3 font-semibold">
+                  Learn More
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Testimonials */}
+      <section className=" bg-[#F8F9FF]">
+        <div className="h-full w-full xl:max-w-7xl xl:mx-auto py-8">
+          <div className="p-4">
+            <h2 className="text-center text-[26px] md:text-[38px] text-[#2D2D2D] font-bold py-4">
+              Real Stories from Satisfied Customers
+            </h2>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 lg:gap-8">
+              {testimonials.map((testimonial, index) => (
+                <div
+                  key={index}
+                  className="bg-white rounded-2xl flex flex-col items-center text-center p-4 lg:p-8 gap-4"
+                >
+                  <img src={testimonial.avatar} alt={testimonial.name} />
+                  <div>
+                    <p className="text-[20px] text-[#111827] font-semibold">
+                      {testimonial.name}
+                    </p>
+                    <p className="text-[14px] text-[#374151] font-light">
+                      {testimonial.title}
+                    </p>
+                  </div>
+                  <p className="text-[#2D2D2D] text-[16px] font-normal">
+                    “{testimonial.message}”
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Banner */}
+      <section className="h-full w-full xl:max-w-7xl xl:mx-auto ">
+        <div className="pt-4 md:pt-0 px-4 md:px-12 md:my-8 bg-[#2C1618] flex flex-col md:flex-row items-center">
+          <div className="md:w-1/2 py-4 text-center md:text-left md:py-4 xl:py-20 space-y-6 text-[#F8F9FF]">
+            <h4 className="text-[26px] lg:text-[38px] font-bold ">
+              Tell us what you do, get
+              <br /> clients anywhere!
+            </h4>
+            <p className="text-base md:text-lg">
+              Break limits and explore the endless possibilities
+            </p>
+
+            <button className="bg-[#009379] text-[#F8F9FF] py-3 px-8 rounded-2xl">
+              Join Sabilist
+            </button>
+          </div>
+
+          <div className="md:w-1/2 h-full">
+            <img
+              src={'/images/banner-img.png'}
+              alt="Lady holding a xesophone"
+            />
+          </div>
+        </div>
+      </section>
     </main>
   );
 }
