@@ -269,7 +269,7 @@ export default function Home() {
 
       {/* About */}
       <section className="bg-[#F8F9FF]">
-        <div className=" w-full xl:max-w-7xl h-full xl:mx-auto">
+        <div className="w-full h-full xl:mx-auto p-2 px-[5%] lg:px-[6%]">
           <div className="p-4">
             <div className="flex flex-col md:flex-row items-center justify-center gap-8 lg:mx-12">
               <div className="w-full md:w-1/2 flex flex-col justify-center text-[#2D2D2D]">
@@ -342,7 +342,7 @@ export default function Home() {
 
       {/* Testimonials */}
       <section className=" bg-[#F8F9FF]">
-        <div className="h-full w-full xl:max-w-7xl xl:mx-auto py-8">
+        <div className="h-full w-full xl:mx-auto py-8 p-2 px-[5%] lg:px-[9%]">
           <div className="p-4">
             <h2 className="text-center text-[26px] md:text-[38px] text-[#2D2D2D] font-bold py-4">
               Real Stories from Satisfied Customers
