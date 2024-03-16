@@ -134,7 +134,7 @@ export default function LandingNavigation({
               </div>
             </div>
           </div>
-          <div className="p-20 text-center bg-transparent rounded-lg shadow sm:pt-[400px] dark:bg-transparent mx-auto">
+          <div className="p-10 md:p-20 pt-[200px] text-center bg-transparent rounded-lg shadow sm:pt-[400px] md:pt-[400px] dark:bg-transparent mx-auto">
             <h5 className="mb-2 text-3xl md:text-4xl md:mx-[10%] lg:mx-[25%] font-bold text-white dark:text-white">
               Let the right{' '}
               <span className="text-[#009379]">Artisans help</span>, we sabi!
