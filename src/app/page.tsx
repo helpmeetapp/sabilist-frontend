@@ -179,7 +179,7 @@ export default function Home() {
       {/* Catalogues */}
       <section className="bg-[#F8F9FF] pb-20">
         <div className="justify-between mx-auto">
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 mx-auto  p-2 px-[5%] lg:px-[10%]">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 mx-auto p-2 px-[5%] lg:px-[10%]">
             {catalogues.map((catalogue) => (
               <div
                 key={catalogue.id}
@@ -375,7 +375,7 @@ export default function Home() {
 
       {/* Banner */}
       <section className="h-full w-full xl:mx-auto ">
-        <div className="pt-4 md:pt-0 px-4 md:px-12 bg-[#2C1618] flex flex-col md:flex-row items-center">
+        <div className="pt-4 md:pt-0 px-[5%] lg:px-[10%] md:px-12 bg-[#2C1618] flex flex-col md:flex-row items-center">
           <div className="md:w-1/2 py-4 text-center md:text-left md:py-4 xl:py-20 space-y-6 text-[#F8F9FF]">
             <h4 className="text-[26px] lg:text-[38px] font-bold ">
               Tell us what you do, get

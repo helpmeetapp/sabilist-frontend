@@ -3,13 +3,15 @@ import React from 'react';
 function Footer() {
   return (
     <footer className="h-full w-xcreen bg-[#2D2D2D] text-[#F8F9FF]">
-      <div className="max-w-7xl mx-auto py-4 md:py-16 px-4 flex flex-col md:flex-row">
-        <div className="md:w-[30%] py-8">Footer</div>
+      <div className="max-w-7xl mx-auto pt-4 md:pt-16 px-4 flex flex-col md:flex-row">
+        <div className="md:w-[30%]">
+          <h5 className="text-2xl">Sabilist</h5>
+        </div>
 
-        <div className="md:w-[70%] flex flex-wrap gap-4 md:gap-12 lg:gap-16 md:justify-end md:mr-12">
-          <div className="space-y-2">
-            <h5 className="text-sm md:text-lg lg:text-xl font-bold">Product</h5>
-            <ul className="text-[9px] md:text-sm lg:text-base font-normal space-y-2">
+        <div className="md:w-[70%] w-full grid grid-cols-2 lg:grid-cols-4 text-xl">
+          <div className="space-y-2 mb-10">
+            <h5 className="text-xl font-bold">Product</h5>
+            <ul className="text-base font-normal space-y-2">
               <li>Overview</li>
               <li>Features</li>
               <li>Consultancy</li>
@@ -18,9 +20,9 @@ function Footer() {
             </ul>
           </div>
 
-          <div className="space-y-2">
-            <h5 className="text-sm md:text-lg lg:text-xl font-bold">Company</h5>
-            <ul className="text-[9px] md:text-sm  lg:text-base font-normal space-y-2">
+          <div className="space-y-2 mb-10">
+            <h5 className="text-xl font-bold">Company</h5>
+            <ul className="text-base font-normal space-y-2">
               <li>About</li>
               <li>Press</li>
               <li>Careers</li>
@@ -29,9 +31,9 @@ function Footer() {
             </ul>
           </div>
 
-          <div className="space-y-2">
-            <h5 className="text-sm md:text-lg lg:text-xl font-bold">Support</h5>
-            <ul className="text-[9px] md:text-sm  lg:text-base font-normal space-y-2">
+          <div className="space-y-2 mb-10">
+            <h5 className="text-xl font-bold">Support</h5>
+            <ul className="text-base font-normal space-y-2">
               <li>Help Center</li>
               <li>Terms of Service</li>
               <li>Legal</li>
@@ -40,11 +42,9 @@ function Footer() {
             </ul>
           </div>
 
-          <div className="space-y-2">
-            <h5 className="text-sm md:text-lg lg:text-xl font-bold">
-              Follow us
-            </h5>
-            <ul className="text-[9px] md:text-sm  lg:text-base font-normal space-y-2">
+          <div className="space-y-2 mb-10">
+            <h5 className="text-xl font-bold">Follow us</h5>
+            <ul className="text-base font-normal space-y-2">
               <li>Facebook</li>
               <li>Twitter</li>
               <li>Thread</li>
@@ -53,6 +53,11 @@ function Footer() {
             </ul>
           </div>
         </div>
+      </div>
+      <div className="text-center">
+        <p className="py-10">
+          Copyright &copy; Sabilist 2024 | All Rights Reserved
+        </p>
       </div>
     </footer>
   );
