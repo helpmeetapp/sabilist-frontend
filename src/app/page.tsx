@@ -168,7 +168,7 @@ export default function Home() {
               >
                 <div className="flex">
                   <img src={category.icon} className="mr-2" />
-                  {category.name}
+                  <p className={'text-lg'}>{category.name}</p>
                 </div>
               </a>
             </li>
@@ -374,8 +374,8 @@ export default function Home() {
       </section>
 
       {/* Banner */}
-      <section className="h-full w-full xl:max-w-7xl xl:mx-auto ">
-        <div className="pt-4 md:pt-0 px-4 md:px-12 md:my-8 bg-[#2C1618] flex flex-col md:flex-row items-center">
+      <section className="h-full w-full xl:mx-auto ">
+        <div className="pt-4 md:pt-0 px-4 md:px-12 bg-[#2C1618] flex flex-col md:flex-row items-center">
           <div className="md:w-1/2 py-4 text-center md:text-left md:py-4 xl:py-20 space-y-6 text-[#F8F9FF]">
             <h4 className="text-[26px] lg:text-[38px] font-bold ">
               Tell us what you do, get
