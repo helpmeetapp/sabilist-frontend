@@ -168,7 +168,7 @@ export default function Home() {
               >
                 <div className="flex">
                   <img src={category.icon} className="mr-2" />
-                  <p className={'text-lg'}>{category.name}</p>
+                  <p className={'text-base'}>{category.name}</p>
                 </div>
               </a>
             </li>
