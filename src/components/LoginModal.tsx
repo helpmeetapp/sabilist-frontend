@@ -124,7 +124,7 @@ const LoginModal: FC<LoginModalProps> = ({
                   </div>
 
                   <small className="text-[#BFAC05]">
-                    <i>Forgot your password?</i>{' '}
+                    <i>Forgot your password?</i>
                     <span className="underline">Click Here!</span>
                   </small>
                 </div>
@@ -150,7 +150,7 @@ const LoginModal: FC<LoginModalProps> = ({
                 </button>
               </form>
               <small className="block md:hidden">
-                Don't have an account?{' '}
+                Don't have an account?
                 <button onClick={openRegisterModal} className="underline">
                   Sign Up
                 </button>

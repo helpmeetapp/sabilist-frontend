@@ -92,7 +92,7 @@ const VerifyModal: FC<VerifyModalProps> = ({
               />
             </div>
             <small>
-              Didn't receive any 6-digit code?{' '}
+              Didn't receive any 6-digit code?
               <button
                 className="underline text-[#009379]"
                 onClick={() => {
