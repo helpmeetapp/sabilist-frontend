@@ -6,8 +6,10 @@ import Categories from '../Categories';
 
 export default function LandingNavigation({
   isVisible,
+  onLoginClick,
 }: {
   isVisible: boolean;
+  onLoginClick: () => void;
 }) {
   const navlinks = [
     {
@@ -115,6 +117,7 @@ export default function LandingNavigation({
                   <button
                     type="button"
                     className={`text-black hover:text-white border border-black hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-sm  py-2 px-2 w-full text-center dark:border-white dark:text-white dark:hover:text-gray-900 dark:hover:bg-white dark:focus:ring-white`}
+                    onClick={onLoginClick}
                   >
                     Sign in
                   </button>
@@ -128,6 +131,7 @@ export default function LandingNavigation({
                       ? 'text-black hover:bg-black hover:text-white'
                       : 'dark:border-white dark:text-white dark:hover:text-gray-900 dark:hover:bg-white dark:hover:border-black dark:focus:ring-white text-white hover:text-white border-white hover:bg-gray-900 focus:ring-4 hover:border-black focus:outline-none focus:ring-gray-300'
                   } border font-medium rounded-lg text-sm px-4 py-2 ml-5 text-center  `}
+                  onClick={onLoginClick}
                 >
                   Sign in
                 </button>

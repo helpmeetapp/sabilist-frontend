@@ -1,11 +1,17 @@
+'use client';
 import Image from 'next/image';
-import { FC } from 'react';
+import { FC, useState } from 'react';
 
 import Link from 'next/link';
 import features from '@/data/features';
 import testimonials from '@/data/testimonials';
 
+import LoginModal from '@/components/LoginModal';
+
 export default function Home() {
+  const [isLoginModalOpen, setLoginModalOpen] = useState(false);
+  const [isRegisterModalOpen, setRegisterModalOpen] = useState(false);
+
   const categories = [
     {
       name: 'Construction',
@@ -154,6 +160,24 @@ export default function Home() {
       image: '/images/services/rewire.png',
     },
   ];
+
+  const openRegisterModal = () => {
+    setRegisterModalOpen(true);
+    setLoginModalOpen(false);
+  };
+
+  const closeRegisterModal = () => {
+    setRegisterModalOpen(false);
+  };
+
+  const openLoginModal = () => {
+    setLoginModalOpen(true);
+    setRegisterModalOpen(false);
+  };
+
+  const closeLoginModal = () => {
+    setLoginModalOpen(false);
+  };
 
   return (
     <main>
@@ -398,6 +422,12 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <LoginModal
+        isOpen={isLoginModalOpen}
+        onClose={closeLoginModal}
+        openRegisterModal={openRegisterModal}
+      />
     </main>
   );
 }
