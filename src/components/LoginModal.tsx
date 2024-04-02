@@ -16,12 +16,14 @@ type LoginModalProps = {
   isOpen: boolean;
   onClose: () => void;
   openRegisterModal: () => void;
+  openOtpModal: () => void;
 };
 
 const LoginModal: FC<LoginModalProps> = ({
   isOpen,
   onClose,
   openRegisterModal,
+  openOtpModal,
 }) => {
   const [credentials, setCredentials] = useState({ email: '', password: '' });
   const [isLoading, setIsLoading] = useState(false);
@@ -125,7 +127,9 @@ const LoginModal: FC<LoginModalProps> = ({
 
                   <small className="text-[#BFAC05]">
                     <i>Forgot your password?</i>
-                    <span className="underline">Click Here!</span>
+                    <span className="underline" onClick={openOtpModal}>
+                      Click Here!
+                    </span>
                   </small>
                 </div>
 

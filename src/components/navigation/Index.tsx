@@ -88,6 +88,7 @@ export default function IndexNavigation() {
         isOpen={isLoginModalOpen}
         onClose={closeLoginModal}
         openRegisterModal={openRegisterModal}
+        openOtpModal={openOtpModal}
       />
 
       <VerifyModal
